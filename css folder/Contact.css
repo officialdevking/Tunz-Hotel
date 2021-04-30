@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+ padding: 0;
+ margin: 0;
+}
+html{
+ overflow-x: hidden;
+}
+body{
+ width: 100%;
+ font-size: 16px;
+ background-color: rgb(243, 239, 239);
+ overflow-x: hidden;
+}
+.navigation{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ max-width: 960px;
+ width: 100%;
+ margin: 10px auto;
+}
+nav ul{
+ display: flex;
+}
+nav li{
+ list-style-type: none;
+ padding: 15px 0;
+ margin: 0 15px;
+}
+nav a{
+ text-decoration: none;
+ color: #2B2B2B;
+}
+.active{
+ color: #02CE77;
+ border-bottom: 3px solid #02CE77;
+}
+
+/* Main-body */
+#container{
+ padding-top: 219px;
+ margin-left: 162px;
+}
+#container-1{
+ background-image: url(../images/Rectangle\ 41\ \(1\).png);
+ background-position: center center;
+ background-size: cover;
+ height: 660px;
+}
+.container h1{
+ color: white;
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 70px;
+ line-height: 80px;
+ width: 60%;
+}
+#rooms{
+ margin-left: 162px;
+ display: flex;
+}
+#rooms h1{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 50px;
+ max-width: 960px;
+ margin: 30px auto;
+ line-height: normal;
+}
+.contact{
+display: flex;
+justify-content: space-between;
+width: 90%;
+max-width: 960px;
+margin: auto;
+}
+.contact-2, .contact-3, .contact-4{
+ width: 50%;
+ margin: 30px 0;
+}
+.contact-all-2 label{
+ display: flex;
+}
+input{
+ padding: 10px 200px 10px 5px;
+ margin-bottom: 20px;
+ border: 1px solid rgba(128, 128, 128, 0.329);
+}
+textarea{
+ padding: 30px 220px 20px 5px;
+ margin-bottom: 20px;
+ border: 1px solid rgba(128, 128, 128, 0.329);
+}
+.name{
+ display: block;
+}
+.btn{
+ background-color: #02CE77;
+ padding: 10px 145px;
+ color: white;
+ margin: 5px 0;
+ border: none;
+}
+.map{
+ max-width: 960px;
+ margin: auto;
+}
+.mapper{
+ width: 100%;
+ margin: 20px 0;
+}
+
+/* footer */
+.footer{
+ font-family: 'Times New Roman', Times, serif;
+ background-color: #0A1938;
+}
+.foot{
+ display: flex;
+ justify-content: space-between;
+ max-width: 960px;
+ width: 100%;
+ margin: 10px auto;
+ margin-left: 162px;
+ padding: 50px 0 0 0;
+}
+.footer-first{
+ height: 250px;
+}
+.foot-text{
+ color: white;
+ margin-top: 20px;
+}
+
+.social-media{
+ margin-top: 20px;
+}
+.footer-second{
+ display: flex;
+ flex-direction: column;
+}
+.footer-second a{
+ color: white;
+ text-decoration: none;
+ margin: 10px 0;
+ padding-left: 0;
+}
+.footer-third{
+ margin-left: 10px;
+ display: flex;
+ flex-direction: column;
+}
+.footer-third a{
+ color: white;
+ margin: 10px 0;
+ text-decoration: none;
+ padding-left: 0;
+}
+footer h1{
+ color: white;
+}
+.footer-fourth{
+ display: flex;
+ flex-direction: column;
+}
+.footer-fourth a{
+ color: white;
+ margin: 10px 0;
+ text-decoration: none;
+ padding-left: 0;
+}
+.footer-second a:hover, .footer-third a:hover{
+ color: #02CE77;
+ transition: 0.5 ease;
+}
+
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px){
+ body{
+  width: 100%;
+ }
+ .contact{
+  width: 90%;
+ }
+ .map{
+  max-width: 960px;
+  margin: auto;
+ }
+ .mapper{
+  width: 100%;
+  margin: 20px 0;
+ }
+ .foot{
+  margin: 10px auto;
+  padding: 30px 20px;
+ }
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+ .navigation{
+  justify-content: space-around;
+ }
+ #container{
+  margin-left: 30px;
+ }
+ .container h1{
+  width: 100%;
+ }
+ #rooms{
+  margin-left: 30px;
+ }
+ .contact{
+  width: 90%;
+ }
+ .map{
+  max-width: 960px;
+  margin: auto;
+ }
+ .mapper{
+  width: 90%;
+  margin: 50px;
+ }
+ .foot{
+  flex-wrap: wrap;
+  width: 90%;
+ }
+ .footer-first, .footer-second, .footer-third, .footer-fourth{
+  width: 35%;
+ }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+ .navigation{
+  flex-flow: column;
+  align-items: flex-start;
+  margin: 20px auto;
+ }
+ nav ul{
+  flex-flow: column;
+ } 
+ .contact{
+  flex-direction: column;
+  text-align: center;
+ }
+ .contact-2, .contact-3, .contact-4{
+  width: 100%;
+ }
+ .contact-all-2 label{
+  display: block;
+  /* text-align: left; */
+ }
+ .map{
+  max-width: 960px;
+  margin: auto;
+ }
+ .mapper{
+  width: 90%;
+  margin: 35px;
+ }
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+ #rooms h1{
+  width: 30%;
+  font-size: 38px;
+ }
+ input{
+  padding: 10px 110px 10px 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.329);
+ }
+ textarea{
+  padding: 30px 128px 20px 5px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.329);
+ }
+ .btn{
+  padding: 10px 110px;
+ }
+ .map{
+  max-width: 960px;
+  margin: auto;
+ }
+ .mapper{
+  margin: 20px;
+ }
+ .foot{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .footer-first, .footer-second, .footer-third, .footer-fourth{
+  width: 100%;
+  text-align: center;
+ }
+ .footer-first a, .footer-second a, .footer-third a, .footer-fourth a{
+  width: 100%;
+  text-align: center;
+ }
+}
